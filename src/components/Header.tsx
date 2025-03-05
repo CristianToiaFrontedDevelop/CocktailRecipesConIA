@@ -1,4 +1,4 @@
-import logoCocktail from "../../public/logo.svg"
+import logoCocktail from "../assets/logo.svg"
 import { NavLink, useLocation } from "react-router-dom"
 import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from "react"
 import { useAppStore } from "../stores/useAppStore"
