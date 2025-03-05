@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# Cocktail con Vite + React + Typescript + RouterDom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+"Cocktail" es una aplicación para buscar recetas de tragos y bebidas filtrando por ingredientes y categorías. Permite a los usuarios encontrar recetas específicas y guardarlas como favoritas para un acceso rápido y fácil.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- **Panel Principal (Index Page):** Permite a los usuarios llenar un formulario con dos inputs ("ingredientes" y "categoría") para obtener una receta y las instrucciones para su preparación en una modal.
+- **Modal de Recetas:** Muestra la receta con instrucciones y tiene botones para cerrar la modal o agregar la receta a favoritos.
+- **Página de Favoritos:** Muestra todas las recetas guardadas como favoritas y permite eliminar recetas individualmente.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologías Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React.js**
+- **Typescript**
+- **TailwindCSS**
+- **React Router DOM**
+- **Zustand**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Instalación y Uso
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+```bash
+1. Clona el repositorio:
+   git clone [URL_DEL_REPOSITORIO]
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. Navega al directorio del proyecto:
+   cd cocktail-app
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. Instala las dependencias:
+   npm install
+
+4. Inicia la aplicación en modo de desarrollo:
+   npm run dev
+
+5. Abre tu navegador y ve a:
+   http://localhost:3000
+
+¡Las contribuciones son bienvenidas! Si deseas contribuir, por favor haz un fork del repositorio, crea una nueva rama, haz tus cambios y envía un pull request.
+
+1. Haz un fork del proyecto:
+   git fork [URL_DEL_REPOSITORIO]
+
+2. Crea una nueva rama:
+   git checkout -b nueva-funcionalidad
+
+3. Realiza tus cambios y haz commit:
+   git commit -m "Agregar nueva funcionalidad"
+
+4. Envía tus cambios a tu fork:
+   git push origin nueva-funcionalidad
+
+5. Abre un pull request en el repositorio original.
