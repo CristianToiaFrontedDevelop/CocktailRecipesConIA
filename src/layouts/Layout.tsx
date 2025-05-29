@@ -12,13 +12,13 @@ export default function Layout() {
 
   useEffect( () => {
     loadFromStorage()
-  },[])
+  },[loadFromStorage])
 
   return (
     <>
       
       <Header />
-      <main className="container mx=auto py-16">
+      <main className="container mx=auto p-16">
         <Outlet />
       </main>
 

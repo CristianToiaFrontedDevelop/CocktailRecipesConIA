@@ -26,7 +26,7 @@ export default function Header() {
 
   useEffect(() => {
     fetchCategories()
-  }, [])
+  }, [fetchCategories])
 
   const handleChange = (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLSelectElement>) => {
     setSearchFilters({
@@ -71,6 +71,13 @@ export default function Header() {
               className={({isActive})=> isActive ? 'text-orange-500 uppercase font-bold ' : 'text-white uppercase font-bold'}
             >
               Favoritos
+            </NavLink>
+
+            <NavLink 
+              to="/ia"
+              className={({isActive})=> isActive ? 'text-orange-500 uppercase font-bold ' : 'text-white uppercase font-bold'}
+            >
+              Recetas con IA
             </NavLink>
 
           </nav>
