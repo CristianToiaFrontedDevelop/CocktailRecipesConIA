@@ -1,53 +1,65 @@
-# Cocktail con Vite + React + Typescript + RouterDom
+# 🍹 Cocktail Recipes - Descubre y Crea Recetas con IA
 
-## Descripción
+## 📌 Descripción del Proyecto
+Cocktail Recipes es una aplicación que permite explorar y descubrir una amplia variedad de recetas de cócteles obtenidas desde una **API pública**. Ahora, gracias a la implementación de **inteligencia artificial**, también puedes **generar recetas personalizadas** basadas en ingredientes y preferencias.
 
-"Cocktail" es una aplicación para buscar recetas de tragos y bebidas filtrando por ingredientes y categorías. Permite a los usuarios encontrar recetas específicas y guardarlas como favoritas para un acceso rápido y fácil.
+## 🚀 Características Principales
+- 🔍 **Búsqueda de Recetas** a través de una API confiable.
+- 🧠 **Generación de recetas con IA** usando **OpenRouter AI**.
+- 📂 **Favoritos**: Guarda tus recetas preferidas para acceder fácilmente.
+- 🎨 **Interfaz moderna** desarrollada con **React + Tailwind CSS**.
+- ⚡ **Rápida y eficiente** gracias al uso de **Zustand** para la gestión de estado.
 
-## Características
+## 🔥 ¿Cómo funciona la IA?
+La IA integrada en este proyecto permite:
+1. Generar recetas personalizadas con ingredientes específicos.
+2. Mostrar el resultado **progresivamente**, simulando una respuesta más natural.
+3. Ajustar combinaciones únicas según preferencias del usuario.
 
-- **Panel Principal (Index Page):** Permite a los usuarios llenar un formulario con dos inputs ("ingredientes" y "categoría") para obtener una receta y las instrucciones para su preparación en una modal.
-- **Modal de Recetas:** Muestra la receta con instrucciones y tiene botones para cerrar la modal o agregar la receta a favoritos.
-- **Página de Favoritos:** Muestra todas las recetas guardadas como favoritas y permite eliminar recetas individualmente.
+## 🛠️ Tecnologías utilizadas
+- **React** – Desarrollo de la interfaz.
+- **Zustand** – Gestión de estado eficiente.
+- **OpenRouter AI** – Generación de recetas mediante prompts.
+- **Tailwind CSS** – Estilización moderna y adaptable.
 
-## Tecnologías Utilizadas
+## 🔥 **¿Cómo probarlo?**
+Sigue estos pasos para ejecutar la aplicación localmente:
 
-- **React.js**
-- **Typescript**
-- **TailwindCSS**
-- **React Router DOM**
-- **Zustand**
-
-## Instalación y Uso
-
+### **1️⃣ Clonar el repositorio**
+Abre una terminal y ejecuta:
 ```bash
-1. Clona el repositorio:
-   git clone [URL_DEL_REPOSITORIO]
+git clone https://github.com/CristianToiaFrontedDevelop/CocktailRecipesConIA.git
+```
 
-2. Navega al directorio del proyecto:
-   cd cocktail-app
+### **2️⃣ Instalar dependencias**
+```bash
+npm install
+```
 
-3. Instala las dependencias:
-   npm install
+### **3️⃣ Configurar variables de entorno**
+Antes de ejecutar el proyecto, agrega tu clave de OpenRouter AI en un archivo .env:
+```bash
+OPENROUTER_API_KEY=TU_CLAVE_DE_API
+```
 
-4. Inicia la aplicación en modo de desarrollo:
-   npm run dev
+### **4️⃣ Ejecutar el servidor de desarrollo**
+```bash
+npm run dev
+```
 
-5. Abre tu navegador y ve a:
-   http://localhost:3000
+### **5️⃣ Generar recetas con IA**
+- **Ingresa ingredientes en el formulario.**
+- **La IA generará recetas progresivamente según los datos ingresados.**
+  
+- **¡Disfruta descubriendo nuevas recetas con inteligencia artificial!**
 
-¡Las contribuciones son bienvenidas! Si deseas contribuir, por favor haz un fork del repositorio, crea una nueva rama, haz tus cambios y envía un pull request.
 
-1. Haz un fork del proyecto:
-   git fork [URL_DEL_REPOSITORIO]
 
-2. Crea una nueva rama:
-   git checkout -b nueva-funcionalidad
 
-3. Realiza tus cambios y haz commit:
-   git commit -m "Agregar nueva funcionalidad"
 
-4. Envía tus cambios a tu fork:
-   git push origin nueva-funcionalidad
 
-5. Abre un pull request en el repositorio original.
+
+
+
+
+
